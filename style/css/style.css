@@ -2,6 +2,7 @@ html,
 body,
 section,
 div,
+ul,
 h1,
 h2,
 h3,
@@ -18,14 +19,100 @@ html {
 body {
   min-height: 100%;
   position: relative;
+  font-family: "PTSans", sans-serif;
 }
 
-header {
-  background-color: green;
-  min-height: 30px;
+button {
+  border: none;
+}
+button:hover {
+  cursor: pointer;
 }
 
-.page-footer {
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.site-header {
+  background-color: #dcdcdc;
+  width: 100%;
+  padding: 65px 0;
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.site-header__contacts > a {
+  font-family: "Open Sans Condensed";
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0.25px;
+  color: #767676;
+}
+.site-header__buttons {
+  display: none;
+}
+
+.feedback {
+  background-color: #474747;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 246px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 24px;
+  line-height: 46px;
+}
+
+.site-nav {
+  background-color: #787878;
+  width: 100%;
+  padding: 10px 0;
+}
+.site-nav__container {
+  align-items: center;
+  justify-content: center;
+}
+.site-nav__navigation {
+  text-align: center;
+}
+.site-nav__item {
+  display: inline-block;
+}
+.site-nav__item > a {
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 30px;
+  padding: 0 16px;
+  border-right: 2px solid #FFFFFF;
+}
+.site-nav__item:first-child > a {
+  padding-left: 0;
+}
+.site-nav__item:last-child > a {
+  padding-right: 0;
+  border-right: none;
+}
+
+.site-footer {
   background-color: blue;
   min-height: 30px;
   position: absolute;

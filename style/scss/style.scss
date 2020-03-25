@@ -2,6 +2,7 @@ html,
 body,
 section,
 div,
+ul,
 h1,
 h2,
 h3,
@@ -18,6 +19,22 @@ html {
 body {
   min-height: 100%;
   position: relative;
+  font-family: 'PTSans', sans-serif;
+}
+
+button {
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 $lightGrayBackground: #dcdcdc;
@@ -26,13 +43,84 @@ $buttonColor: #474747;
 $fontColor: #767676;
 $priceColor: #444444;
 $activeColor: #010101;
+$overlayColor: rgba(71, 71, 71, 0.5);
 
-header {
-  background-color: green;
-  min-height: 30px;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
 }
 
-.page-footer {
+.site-header {
+  background-color: $lightGrayBackground;
+  width: 100%;
+  padding: 65px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    &>a {
+      font-family: 'Open Sans Condensed';
+      font-weight: lighter;
+      font-size: 40px;
+      line-height: 46px;
+      letter-spacing: 0.25px;
+      color: $fontColor;
+    }
+  }
+  &__buttons {
+    display: none;
+  }
+}
+
+.feedback {
+  background-color: $buttonColor;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 246px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 24px;
+  line-height: 46px;
+}
+
+.site-nav {
+  background-color: $darkGreyBackground;
+  width: 100%;
+  padding: 10px 0;
+  &__container {
+    align-items: center;
+    justify-content: center;
+  }
+  &__navigation {
+    text-align: center;
+  }
+  &__item {
+    display: inline-block;
+    &>a {
+      color: #FFFFFF;
+      font-weight: normal;
+      font-size: 30px;
+      padding: 0 16px;
+      border-right: 2px solid #FFFFFF;
+    }
+    &:first-child>a {
+      padding-left: 0;
+    }
+    &:last-child>a {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+}
+
+.site-footer {
   background-color: blue;
   min-height: 30px;
   position: absolute;
