@@ -136,6 +136,18 @@ $overlayColor: rgba(71, 71, 71, 0.5);
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__arrow {
+    width: 34px;
+    height: 61px;
+    background: url("../../img/buttons/arrow.png");
+    background-size: cover;
+    &_next {
+      transform: rotate(180deg);
+    }
   }
   &__gallery {
   }
@@ -173,6 +185,9 @@ $overlayColor: rgba(71, 71, 71, 0.5);
       line-height: 30px;
       color: $fontColor;
     }
+    &>a.active {
+      text-decoration: underline;
+    }
   }
   &__subcategory {
     padding-left: 6px;
@@ -194,6 +209,9 @@ $overlayColor: rgba(71, 71, 71, 0.5);
       font-size: 14px;
       line-height: 22px;
       color: $fontColor;
+    }
+    &>a.active {
+      color: $activeColor;
     }
   }
   &__products {
