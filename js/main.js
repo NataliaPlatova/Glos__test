@@ -5,7 +5,9 @@ $(document).ready(function(){
         speed: 500,
         autoplay: true,
         autoplaySpeed: 4000,
-        prevArrow: '$(.slider__arrow_prev)',
-        nextArrow: '$(.slider__arrow_next)',
-});
+        arrows: true,
+        appendArrows: $('.slider__arrows'),
+        prevArrow: '<button type="button" class="slider__arrow slider__arrow_prev"></button>',
+        nextArrow: '<button type="button" class="slider__arrow slider__arrow_next"></button>',
+    });
 });

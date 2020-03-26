@@ -18,7 +18,7 @@
         <div class="site-header__contacts">
             <a href="#">+7(499) 777-77-77</a>
             <a href="#">+7(499) 777-77-77</a>
-            <button type="button" class="feedback">Обратная связь</button>
+            <button type="button" class="feedback-button">Обратная связь</button>
         </div>
         <div class="site-header__buttons">
             <a href="#">gg</a>
@@ -26,6 +26,22 @@
         </div>
     </div>
 </header>
+<div class="feedback__overlay">
+    <div class="feedback__form">
+        <button type="button" class="feedback-close"></button>
+        <h3 class="feedback-header">Обратная связь</h3>
+        <form autocomplete="off">
+            <label for="name">Ваше имя*</label>
+            <input type="text" name="name" id="name" required>
+            <label for="phone">Телефон*</label>
+            <input type="text" name="phone" id="phone" required>
+            <label for="email">Email*</label>
+            <input type="text" name="email" id="email" required>
+            <label for="message">Сообщение</label>
+            <input type="text" name="message" id="message" required>
+        </form>
+    </div>
+</div>
 <main>
     <nav class="site-nav">
         <div class="container site-nav__container">
@@ -50,17 +66,17 @@
     </nav>
     <section class="slider">
         <div class="slider__container">
-            <div class="slider__arrows">
-                <button type="button" class="slider__arrow slider__arrow_prev"></button>
-                <button type="button" class="slider__arrow slider__arrow_next"></button>
-            </div>
             <div class="slider__gallery">
                 <div class="slider__slide">
                     <img src="img/slides/slide-1.png" alt="banner-1" width="1920" height="400"/>
                 </div>
-                <!--<div class="slider__slide">
+                <div class="slider__slide">
                     <img src="img/slides/slide-2.png" alt="banner-2" width="1920" height="400"/>
-                </div>-->
+                </div>
+            </div>
+            <div class="slider__arrows">
+                <!--<button type="button" class="slider__arrow slider__arrow_prev"></button>
+                <button type="button" class="slider__arrow slider__arrow_next"></button>-->
             </div>
         </div>
     </section>
@@ -226,6 +242,7 @@
         </div>
     </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
