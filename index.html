@@ -27,10 +27,10 @@
     </div>
 </header>
 <div class="feedback__overlay">
-    <div class="feedback__form">
-        <button type="button" class="feedback-close"></button>
-        <h3 class="feedback-header">Обратная связь</h3>
-        <form autocomplete="off">
+    <div class="feedback__form-card">
+        <button type="button" class="feedback__close"></button>
+        <h3 class="feedback__header">Обратная связь</h3>
+        <form autocomplete="off" class="feedback__form">
             <label for="name">Ваше имя*</label>
             <input type="text" name="name" id="name" required>
             <label for="phone">Телефон*</label>
@@ -39,6 +39,7 @@
             <input type="text" name="email" id="email" required>
             <label for="message">Сообщение</label>
             <input type="text" name="message" id="message" required>
+            <button type="submit">Отправить</button>
         </form>
     </div>
 </div>
@@ -74,10 +75,7 @@
                     <img src="img/slides/slide-2.png" alt="banner-2" width="1920" height="400"/>
                 </div>
             </div>
-            <div class="slider__arrows">
-                <!--<button type="button" class="slider__arrow slider__arrow_prev"></button>
-                <button type="button" class="slider__arrow slider__arrow_next"></button>-->
-            </div>
+            <div class="slider__arrows"></div>
         </div>
     </section>
     <section class="page-content">
