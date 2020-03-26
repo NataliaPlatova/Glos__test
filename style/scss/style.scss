@@ -103,20 +103,47 @@ $overlayColor: rgba(71, 71, 71, 0.5);
   }
   &__item {
     display: inline-block;
+    padding: 0 16px;
+    border-right: 2px solid #FFFFFF;
     &>a {
       color: #FFFFFF;
       font-weight: normal;
       font-size: 30px;
-      padding: 0 16px;
-      border-right: 2px solid #FFFFFF;
+      &:hover {
+        border-bottom: 1px solid #FFFFFF;
+      }
     }
-    &:first-child>a {
+    &:first-child {
       padding-left: 0;
     }
-    &:last-child>a {
+    &:last-child {
       padding-right: 0;
       border-right: none;
     }
+  }
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  &__container {
+    width: 100%;
+    overflow: hidden;
+  }
+  &__arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1140px;
+  }
+  &__gallery {
+  }
+  &__slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
   }
 }
 

@@ -78,18 +78,38 @@ a {
   .site-nav__navigation {
     text-align: center; }
   .site-nav__item {
-    display: inline-block; }
+    display: inline-block;
+    padding: 0 16px;
+    border-right: 2px solid #FFFFFF; }
     .site-nav__item > a {
       color: #FFFFFF;
       font-weight: normal;
-      font-size: 30px;
-      padding: 0 16px;
-      border-right: 2px solid #FFFFFF; }
-    .site-nav__item:first-child > a {
+      font-size: 30px; }
+      .site-nav__item > a:hover {
+        border-bottom: 1px solid #FFFFFF; }
+    .site-nav__item:first-child {
       padding-left: 0; }
-    .site-nav__item:last-child > a {
+    .site-nav__item:last-child {
       padding-right: 0;
       border-right: none; }
+
+.slider {
+  position: relative;
+  width: 100%; }
+  .slider__container {
+    width: 100%;
+    overflow: hidden; }
+  .slider__arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1140px; }
+  .slider__slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; }
 
 .site-footer {
   background-color: blue;

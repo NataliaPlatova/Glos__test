@@ -5,6 +5,7 @@
     <title>Glos__test</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="style/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -46,9 +47,25 @@
             </ul>
         </div>
     </nav>
-    <section class="slider"></section>
+    <section class="slider">
+        <div class="slider__container">
+            <div class="slider__arrows">
+                <button type="button" class="slider__arrow-prev"></button>
+                <button type="button" class="slider__arrow-next"></button>
+            </div>
+            <div class="slider__gallery">
+                <div class="slider__slide">
+                    <img src="img/slides/slide-1.png" alt="banner-1" width="1920" height="400"/>
+                </div>
+                <div class="slider__slide">
+                    <img src="img/slides/slide-2.png" alt="banner-2" width="1920" height="400"/>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="content"></section>
 </main>
 <!--<footer class="site-footer"></footer>-->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
