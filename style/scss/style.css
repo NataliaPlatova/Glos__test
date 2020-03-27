@@ -88,7 +88,7 @@ a {
   z-index: 2; }
 .feedback__form-card {
   background-color: #FFFFFF;
-  width: 458px;
+  width: 350px;
   padding: 0 63px 26px 55px;
   display: flex;
   flex-direction: column;
@@ -104,7 +104,8 @@ a {
   padding: 0; }
 .feedback__header {
   font-size: 24px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 24px; }
 .feedback__form {
   width: 100%;
   text-align: center; }
@@ -117,14 +118,16 @@ a {
     height: 40px;
     border: 1px solid #dcdcdc;
     border-radius: 2px;
-    margin-bottom: 22px; }
+    margin-bottom: 16px; }
   .feedback__form > textarea {
-    height: 100px; }
+    height: 140px; }
   .feedback__form > button {
     background-color: #787878;
     color: white;
-    padding: 8px 16px;
-    border-radius: 4px; }
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 .site-nav {
   background-color: #787878;
@@ -290,8 +293,8 @@ a {
     font-size: 28px;
     color: #444444; }
   .product-card__add-to-basket {
-    width: 27px;
-    height: 20px; }
+    width: 28px;
+    height: 21px; }
 
 .add-to-basket {
   background: transparent url("../../img/buttons/addtobasket_mini.png");

@@ -113,7 +113,7 @@ a {
   }
   &__form-card {
     background-color: #FFFFFF;
-    width: 458px;
+    width: 350px;
     padding: 0 63px 26px 55px;
     display: flex;
     flex-direction: column;
@@ -132,6 +132,7 @@ a {
   &__header {
     font-size: 24px;
     text-transform: uppercase;
+    margin-bottom: 24px;
   }
   &__form {
     width: 100%;
@@ -147,16 +148,18 @@ a {
       height: 40px;
       border: 1px solid $lightGrayBackground;
       border-radius: 2px;
-      margin-bottom: 22px;
+      margin-bottom: 16px;
     }
     &>textarea {
-      height: 100px;
+      height: 140px;
     }
     &>button {
       background-color: $darkGreyBackground;
       color: white;
-      padding: 8px 16px;
-      border-radius: 4px;
+      padding: 10px 12px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
     }
   }
 }
@@ -376,8 +379,8 @@ a {
     color: $priceColor;
   }
   &__add-to-basket {
-    width: 27px;
-    height: 20px;
+    width: 28px;
+    height: 21px;
   }
 }
 
