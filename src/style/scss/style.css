@@ -406,6 +406,8 @@ a {
   .site-footer__container {
     display: flex;
     align-items: flex-start; }
+  .site-footer__logo {
+    display: none; }
   .site-footer__info {
     display: flex;
     flex-direction: column; }
@@ -425,5 +427,25 @@ a {
 
 .developers-logo {
   margin-right: 9px; }
+
+@media screen and (max-width: 767px) {
+  .site-footer__clear-fix {
+    min-height: 489px;
+    height: 100%; }
+  .site-footer__content {
+    padding: 40px 15px; }
+  .site-footer__container {
+    flex-direction: column;
+    align-items: center; }
+  .site-footer__logo {
+    display: block;
+    margin-bottom: 48px; }
+  .site-footer__nav {
+    display: none; }
+  .site-footer__feedback-button {
+    width: 100%;
+    margin-bottom: 48px; }
+  .site-footer__info {
+    margin-bottom: 48px; } }
 
 /*# sourceMappingURL=style.css.map */
