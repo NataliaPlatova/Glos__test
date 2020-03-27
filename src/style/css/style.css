@@ -78,6 +78,10 @@ a {
   display: none;
 }
 
+.logo_mobile {
+  display: none;
+}
+
 .feedback-button {
   background-color: #474747;
   color: #FFFFFF;
@@ -105,7 +109,22 @@ a {
   .site-header__call-link {
     width: 29px;
     height: 31px;
-    background: url("");
+    background: url("../../img/buttons/phone.png");
+    background-size: cover;
+    margin-right: 43px;
+  }
+  .site-header__burger {
+    width: 29px;
+    height: 21px;
+    background: url("../../img/buttons/burger.png");
+    background-size: cover;
+  }
+
+  .logo {
+    display: none;
+  }
+  .logo_mobile {
+    display: block;
   }
 }
 .feedback__overlay {
