@@ -223,6 +223,11 @@ a {
   border-right: none;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
 .slider {
   position: relative;
   width: 100%;
@@ -450,6 +455,35 @@ a {
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .page-content {
+    padding-bottom: 0;
+  }
+
+  .catalog__side-block {
+    display: none;
+  }
+  .catalog__products {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-template-columns: 93.2%;
+    gap: 3.4%;
+    row-gap: 31px;
+    padding-bottom: 20px;
+  }
+  .catalog__seo-text {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding: 48px 15px;
+  }
+  .catalog__seo-text > p {
+    max-width: unset;
+    margin-bottom: 24px;
+  }
+  .catalog__seo-text > p:first-child {
+    margin-right: 0;
+  }
+}
 .site-footer {
   width: 100%;
   display: flex;

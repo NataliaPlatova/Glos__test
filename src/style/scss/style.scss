@@ -236,6 +236,12 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
 .slider {
   position: relative;
   width: 100%;
@@ -467,6 +473,37 @@ a {
   background: rgba(0, 0, 0, 0) url("../../img/buttons/addtobasket_mini.png");
   background-size: cover;
   padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .page-content {
+    padding-bottom: 0;
+  }
+  .catalog {
+    &__side-block {
+      display: none;
+    }
+    &__products {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      grid-template-columns: 93.2%;
+      gap: 3.4%;
+      row-gap: 31px;
+      padding-bottom: 20px;
+    }
+    &__seo-text {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      padding: 48px 15px;
+      &>p {
+        max-width: unset;
+        margin-bottom: 24px;
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }
 
 .site-footer {
