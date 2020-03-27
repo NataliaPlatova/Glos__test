@@ -45,7 +45,7 @@ a {
 .site-header {
   background-color: #dcdcdc;
   width: 100%;
-  padding: 65px 0; }
+  padding: 36px 0 26px; }
   .site-header__container {
     display: flex;
     align-items: center;
@@ -59,6 +59,8 @@ a {
       font-size: 40px;
       line-height: 46px;
       letter-spacing: 0.25px; }
+    .site-header__contacts > button {
+      margin-top: 12px; }
   .site-header__buttons {
     display: none; }
 
@@ -127,7 +129,7 @@ a {
 .site-nav {
   background-color: #787878;
   width: 100%;
-  padding: 10px 0; }
+  padding: 24px 0; }
   .site-nav__container {
     align-items: center;
     justify-content: center; }
@@ -135,7 +137,7 @@ a {
     text-align: center; }
   .site-nav__item {
     display: inline-block;
-    padding: 0 16px;
+    padding: 0 20px;
     border-right: 2px solid #FFFFFF; }
     .site-nav__item > a {
       color: #FFFFFF;
@@ -179,7 +181,7 @@ a {
     overflow: hidden; }
 
 .page-content {
-  padding-bottom: 174px; }
+  padding-bottom: 194px; }
 
 .breadcrumbs__list {
   padding-top: 10px; }
@@ -196,7 +198,7 @@ a {
     text-decoration: none; }
 
 .catalog {
-  padding-top: 27px; }
+  padding-top: 24px; }
   .catalog__container {
     max-width: 1170px;
     padding: 0;
@@ -206,9 +208,10 @@ a {
     width: 100%;
     grid-template-columns: 25% 25% 25% 25%; }
   .catalog__side-block {
-    padding-left: 15px; }
+    padding-left: 15px;
+    margin-top: -10px; }
   .catalog__category {
-    margin-bottom: 8px; }
+    margin-bottom: 0px; }
     .catalog__category > a {
       font-size: 18px;
       line-height: 30px; }
@@ -217,7 +220,7 @@ a {
   .catalog__subcategory {
     padding-left: 6px; }
   .catalog__subcategory-item {
-    margin-bottom: 4px; }
+    margin-bottom: 0px; }
     .catalog__subcategory-item:before {
       content: "";
       width: 0px;
@@ -243,12 +246,12 @@ a {
   .catalog__pages-block {
     grid-column-start: 1;
     grid-column-end: -1;
-    padding-top: 12px; }
+    padding-top: 16px; }
   .catalog__pages {
     text-align: center; }
   .catalog__page {
     display: inline-block;
-    margin-right: 8px; }
+    margin-right: 16px; }
     .catalog__page:last-child {
       margin-right: 0; }
     .catalog__page > a.active {
@@ -256,7 +259,7 @@ a {
   .catalog__seo-text {
     grid-column-start: 2;
     grid-column-end: -1;
-    padding: 30px 15px;
+    padding: 20px 15px;
     display: flex;
     flex-wrap: wrap; }
     .catalog__seo-text > p {
