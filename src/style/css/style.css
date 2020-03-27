@@ -463,13 +463,18 @@ a {
   .catalog__side-block {
     display: none;
   }
+  .catalog__wrapper {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
   .catalog__products {
     grid-column-start: 1;
     grid-column-end: -1;
-    grid-template-columns: 93.2%;
-    gap: 3.4%;
+    grid-template-columns: 100%;
+    padding: 0 15px 20px 15px;
     row-gap: 31px;
     padding-bottom: 20px;
+    box-sizing: border-box;
   }
   .catalog__seo-text {
     grid-column-start: 1;
